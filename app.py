@@ -83,7 +83,7 @@ Unterschied dieses Stücks: nicht ein neues Ziel, sondern eine neue, härtere Fr
 st.caption(
     "Anders als die Fall-Demos im Portfolio, die an einem Anwendungsfall mehrere Verfahren vergleichen, zeigt diese Demo - zehntes Stück der Matching-Linie der \"Konzepte\"-Reihe, "
     "erste von vier Erweiterungen des Gale-Shapley-Asts (inspiriert von Alvin Roths Arbeiten zu Marktdesign ohne Geld) - **ein** Verfahren an einem wachsenden Beispiel. "
-    "Als Nächstes folgen Krankenhaus-Zulassung, Top Trading Cycles und Nierentausch."
+    "Danach folgen Krankenhaus-Zulassung, Top Trading Cycles und Nierentausch, alle drei inzwischen gebaut."
 )
 
 with st.expander("So funktioniert Irvings Algorithmus", expanded=True):
@@ -296,12 +296,12 @@ st.markdown(
 | Annahme | Was passiert, wenn sie verletzt ist | Wer setzt an |
 |---|---|---|
 | **Eine stabile Paarung existiert immer** | Muss nicht so sein, sobald es nur eine Gruppe statt zwei Seiten gibt. | **dieses Stück** |
-| **Vorlieben, kein Preis** | Wer zahlen kann, verschiebt Prioritäten - das braucht Kapazitäten statt reiner Präferenzen. | **Krankenhaus-Zulassung** (geplant) |
-| **Paare, keine größeren Kreise** | Manche Tauschbörsen (Wohnungen, Nieren) brauchen Zyklen/Ketten statt Paare. | **Top Trading Cycles → Nierentausch** (geplant) |
-| **Jeder nimmt genau einen Partner** | Kliniken, Schulen und Fahrzeugflotten brauchen Kapazitäten statt 1:1. | **Krankenhaus-Zulassung** (geplant) |
+| **Vorlieben, kein Preis** | Wer zahlen kann, verschiebt Prioritäten - das braucht Kapazitäten statt reiner Präferenzen. | **Krankenhaus-Zulassung** (gebaut) |
+| **Paare, keine größeren Kreise** | Manche Tauschbörsen (Wohnungen, Nieren) brauchen Zyklen/Ketten statt Paare. | **Top Trading Cycles → Nierentausch** (gebaut) |
+| **Jeder nimmt genau einen Partner** | Kliniken, Schulen und Fahrzeugflotten brauchen Kapazitäten statt 1:1. | **Krankenhaus-Zulassung** (gebaut) |
 """
 )
-st.caption("Damit sind vier neue Stücke für die Matching-Linie geplant, alle Erweiterungen des Gale-Shapley-Asts, inspiriert von Alvin Roths Marktdesign-Arbeiten.")
+st.caption("Damit ist die vierteilige Erweiterung der Matching-Linie um den Gale-Shapley-Ast vollständig gebaut, inspiriert von Alvin Roths Marktdesign-Arbeiten.")
 
 st.markdown("---")
 

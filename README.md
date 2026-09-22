@@ -1,6 +1,6 @@
 # Stabile Mitbewohner – wenn Stabilität nicht immer möglich ist – Streamlit-Demo
 
-Zehntes Stück der **Matching-Linie** der "Konzepte"-Reihe für die Website "Sebastian Hanisch – Operations Research und Machine Learning", erste von vier Erweiterungen des Gale-Shapley-Asts (inspiriert von Alvin Roths Arbeiten zu Marktdesign ohne Geld – als Nächstes folgen Krankenhaus-Zulassung, Top Trading Cycles und Nierentausch).
+Zehntes Stück der **Matching-Linie** der "Konzepte"-Reihe für die Website "Sebastian Hanisch – Operations Research und Machine Learning", erste von vier Erweiterungen des Gale-Shapley-Asts (inspiriert von Alvin Roths Arbeiten zu Marktdesign ohne Geld – gefolgt von Krankenhaus-Zulassung, Top Trading Cycles und Nierentausch, alle vier inzwischen gebaut).
 
 **Gale-Shapley** ([gale-shapley-demo](https://github.com/sebastian-hanisch/gale-shapley-demo)) findet immer eine stabile Paarung – solange es **zwei getrennte Seiten** gibt (Fahrzeuge und Aufträge). Hier gibt es nur **eine einzige Gruppe**: jeder Mitbewohner ordnet jeden anderen erreichbaren Mitbewohner. **Irvings Algorithmus** (1985) findet trotzdem eine stabile Paarung, wenn es eine gibt – aber anders als im zweiseitigen Fall **muss es keine geben**. Das ist der zentrale Unterschied dieses Stücks: nicht ein neues Ziel, sondern eine neue, härtere Frage – existiert überhaupt eine Lösung?
 ```
@@ -13,8 +13,9 @@ greedy-matching-demo (Wurzel: eine gewählte Zuordnung bleibt)                  
   │        └─ weighted-blossom-demo (Ungarisch + Blossom, Konvergenz)              [gebaut]
   ├─ gale-shapley-demo (Vorlieben statt Kosten, stabil)                            [gebaut]
   │    ├─ stabile-mitbewohner-demo (eine Gruppe statt zwei Seiten)                 [dieses Stück]
-  │    ├─ Krankenhaus-Zulassung (many-to-one, Kapazitäten)                        [geplant]
-  │    └─ Top Trading Cycles → Nierentausch (Tausch ohne Geld)                    [geplant]
+  │    ├─ krankenhaus-zulassung-demo (many-to-one, Kapazitäten)                    [gebaut]
+  │    └─ top-trading-cycles-demo (Tausch ohne Geld, Wohnungsmarkt)                [gebaut]
+  │         └─ nierentausch-demo (Kompatibilität statt Präferenz, kurze Zyklen)    [gebaut]
   └─ online-matching-demo (Aufträge kommen nacheinander)                          [gebaut]
 ```
 
