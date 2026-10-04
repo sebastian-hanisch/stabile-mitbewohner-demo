@@ -321,8 +321,8 @@ mindestens so gut wie dessen aktueller Halt. Eine während Phase 1 leerlaufende 
 Person in jeder stabilen Paarung frei bleibt (falls eine existiert) - **nicht**, dass keine existiert.
 
 **Phase 2 (Rotationen).** Eine *Rotation* ist eine Kette $(x_0,y_0),\dots,(x_{k-1},y_{k-1})$ mit $y_i=$ zweiter Eintrag
-von $x_i$s Liste und $x_{i+1}=$ letzter Eintrag von $y_i$s Liste. Beseitigung: für jedes $i$ werden aus $y_i$s Liste
-alle Eintraege gestrichen, die schlechter als $x_{i-1}$ eingestuft sind (nicht nur $x_i$ selbst - sonst bliebe nur ein
+von $x_{i-1}$s Liste und $x_i=$ letzter Eintrag von $y_i$s Liste (Indizes zyklisch). Beseitigung: für jedes $i$ werden aus $y_i$s Liste
+alle Einträge gestrichen, die schlechter als $x_{i-1}$ eingestuft sind (nicht nur $x_i$ selbst - sonst bliebe nur ein
 Teilstück der Rotation entfernt, siehe Gusfield & Irving 1989, Abschnitt 4.2.3). Läuft dabei eine Liste einer Person
 leer, die **nicht** schon aus Phase 1 als harmlos unversorgt bekannt war, beweist das **Nichtexistenz** (Irvings Satz).
 Terminiert Phase 2, ohne dass das passiert, hat jede Liste höchstens einen Eintrag - das ist die stabile Paarung.
@@ -340,6 +340,6 @@ st.markdown("---")
 
 st.caption(
     "Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – "
-    "Operations Research und Machine Learning. Interesse an einer maßgeschneiderten Lösung für "
-    "Ihr Unternehmen? [Kontakt aufnehmen](https://sebastianhanisch.net/kontakt.html)"
+    "Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). "
+    "Mehr zur Reihe: [Matching: von Greedy bis Nierentausch](https://sebastianhanisch.net/konzepte-matching.html)."
 )
