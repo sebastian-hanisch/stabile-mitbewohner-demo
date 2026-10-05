@@ -328,7 +328,7 @@ leer, die **nicht** schon aus Phase 1 als harmlos unversorgt bekannt war, beweis
 Terminiert Phase 2, ohne dass das passiert, hat jede Liste höchstens einen Eintrag - das ist die stabile Paarung.
 
 **Aufwand.** $O(n^2)$ im schlechtesten Fall (Irving 1985); die Praxis liegt bei sparsamen, reichweitenbasierten Listen
-deutlich darunter (siehe „Aufwand gegen die Größe").
+deutlich darunter (siehe „Aufwand gegen die Größe“).
 
 Implementiert in `sr_scenario.py` (Karte, unverändert von `blossom-demo` übernommen), `sr_preferences.py` (Vorlieben),
 `sr_irving.py` (Kern mit Ereignisprotokoll und Zertifikat), `sr_oracle.py` (Brute Force), `sr_evaluation.py`

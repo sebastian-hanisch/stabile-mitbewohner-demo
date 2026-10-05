@@ -23,8 +23,8 @@ def test_default_map_family(dist):
     near(d["solvable_share"], 0.61, 0.005)
     near(d["count"]["mean"], 7.2131, 0.005)
     assert d["count"]["median"] == 7.0 and (d["count"]["min"], d["count"]["max"]) == (5, 9)
-    near(d["phase1_unmatched"]["mean"], 5.36, 0.005)
-    assert d["phase1_unmatched"]["median"] == 5.5 and (d["phase1_unmatched"]["min"], d["phase1_unmatched"]["max"]) == (2, 10)
+    near(d["phase1_unmatched"]["mean"], 5.5738, 0.005)      # nur lösbare Karten: 20 - 2 * 7,21 Paare (frühere Fassung mittelte über alle 100 Karten: 5,36)
+    assert d["phase1_unmatched"]["median"] == 6.0 and (d["phase1_unmatched"]["min"], d["phase1_unmatched"]["max"]) == (2, 10)
 
 
 def test_rotations_and_effort(dist):

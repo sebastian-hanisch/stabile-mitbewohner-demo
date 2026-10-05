@@ -27,7 +27,7 @@ Jede hier genannte Zahl ist in `tests/test_claims.py` über die 100 festen Karte
 
 | Frage | Ergebnis |
 |---|---|
-| Existiert überhaupt eine Lösung? | ⚠️ Nur auf **61 von 100** Karten. Wenn ja: im Mittel **7,21** Paare (Median 7, 5 bis 9), im Mittel 5,36 Personen harmlos unversorgt (Median 5,5). |
+| Existiert überhaupt eine Lösung? | ⚠️ Nur auf **61 von 100** Karten. Wenn ja: im Mittel **7,21** Paare (Median 7, 5 bis 9), im Mittel 5,57 Personen harmlos unversorgt (Median 6). |
 | Reichweite senkt die Lösbarkeit | ⚠️ Gegenintuitiv: Reichweite 10 / 15 / 20 / 25 / 30 / 40 / 60 / 100 (Grad 0,51 / 1,09 / 1,96 / 2,90 / 3,95 / 6,48 / 11,44 / 18,43) → lösbar auf **92,5 / 90 / 70 / 65 / 62,5 / 60 / 57,5 / 57,5 %** – streng fallend über den ganzen Sweep, mehr Kandidaten bedeuten mehr Gelegenheit für einen Kreis. |
 | Streuung macht Vorlieben zyklisch genug | ✅ Reine Entfernung (k = 0) ist **immer** lösbar (100 %, 0 Rotationen); schon k = 5 senkt die Lösbarkeit auf 95 %, ab k ≈ 20 pendelt sie sich bei ~68–70 % ein – ein glatter Übergang, kein Sprung. |
 | `dist`-Vorlieben sind ein Sonderfall | ✅ Immer eindeutig und exakt gleich der billigsten-Kante-zuerst-Paarung – auf allen 60 getesteten Karten 0 Rotationen (wie im zweiseitigen Fall bei `gale-shapley-demo`). |

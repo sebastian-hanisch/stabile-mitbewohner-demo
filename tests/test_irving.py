@@ -300,6 +300,7 @@ def test_agrees_with_matching_package_where_it_is_trustworthy():
     unserem unabhaengigen Zertifikat stabiles Ergebnis liefert; sonst wird die Instanz einfach uebersprungen."""
     import warnings
 
+    pytest.importorskip("matching")  # nur in requirements-dev.txt; ohne das Paket bleibt das Orakel sr_oracle.py
     from matching.games import StableRoommates
 
     agree, checked = 0, 0

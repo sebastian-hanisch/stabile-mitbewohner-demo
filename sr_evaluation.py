@@ -166,7 +166,7 @@ def distribution(n, reach, ballung, pref=C.DEFAULT_PREF, noise=DEFAULT_NOISE, se
         "n_seeds": len(seeds), "n_valid": n_valid,
         "solvable_share": _mean([r["solvable"] for r in rows]),
         "count": _stat([r["count"] for r in solved]),
-        "phase1_unmatched": _stat([r["phase1_unmatched"] for r in rows]),
+        "phase1_unmatched": _stat([r["phase1_unmatched"] for r in solved]),
         "rotations": _stat([r["rotations"] for r in rows]), "rotations_share_gt0": _mean([r["rotations"] > 0 for r in rows]),
         "proposals": _stat([r["proposals"] for r in rows]),
         "naive_blocking": _stat([r["naive_blocking"] for r in solved]), "naive_blocking_share_gt0": _mean([r["naive_blocking"] > 0 for r in solved]),
